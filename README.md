@@ -2,7 +2,7 @@
 
 Live viewer: https://oscarbrendonn.github.io/pill/
 
-Capsule built from clean lathe geometry (37k quads, smooth shaded) with a hand-authored base colour texture matching the source icon exactly.
+Capsule built from pole-free icosphere topology (20k triangles, smooth shaded, no UV seam) with a hand-authored base colour texture matching the source icon exactly.
 
 Colours sampled from the source: green `#5FCB88`, divider `#1D3934`, body `#FFFFFF`.
 
