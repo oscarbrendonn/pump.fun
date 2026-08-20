@@ -1,6 +1,6 @@
-# Pill
+# Pump.fun
 
-Live viewer: https://oscarbrendonn.github.io/pill/
+Live viewer: https://oscarbrendonn.github.io/pump.fun/
 
 Capsule built from pole-free icosphere topology (20k triangles, smooth shaded) with a hand-authored base colour texture matching the source icon exactly.
 
