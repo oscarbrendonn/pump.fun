@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pill</title>
+<script type="module" src="https://unpkg.com/@google/model-viewer@3.5.0/dist/model-viewer.min.js"></script>
+<style>
+  :root{--bg:#0e0e10;--fg:#e9e9ee;--dim:#8b8b96;--line:#232329;--card:#141417}
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--bg);color:var(--fg);
+    font-family:-apple-system,BlinkMacSystemFont,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:900px;margin:0 auto;padding:42px 22px 64px}
+  h1{font-size:13px;letter-spacing:.24em;text-transform:uppercase;font-weight:500;margin:0 0 5px}
+  .sub{color:var(--dim);font-size:13px;margin:0 0 30px}
+  .cell{background:var(--card);border:1px solid var(--line);border-radius:15px;overflow:hidden}
+  model-viewer{width:100%;height:min(64vh,580px);background:transparent;--poster-color:transparent;display:block}
+  .cap{padding:14px 17px;border-top:1px solid var(--line);
+    display:flex;justify-content:space-between;gap:12px;align-items:baseline}
+  .cap b{font-weight:600;letter-spacing:.14em;font-size:11px;text-transform:uppercase}
+  .cap span{color:var(--dim);font-size:12.5px}
+  .sig{margin-top:46px;padding-top:20px;border-top:1px solid var(--line);
+    text-align:right;color:var(--dim);font-size:12px}
+  .sig i{font-family:Georgia,serif;font-size:15px;color:var(--fg)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Pill</h1>
+  <p class="sub">Drag to rotate. Pinch or scroll to zoom.</p>
+  <div class="cell">
+    <model-viewer src="pill.glb" camera-controls auto-rotate rotation-per-second="22deg"
+      shadow-intensity="0.55" exposure="1.1" interaction-prompt="none" touch-action="pan-y"></model-viewer>
+    <div class="cap"><b>Capsule</b><span>598k triangles, 4K texture</span></div>
+  </div>
+  <div class="sig">Artwork by <i>@oscarbrencyrpto</i></div>
+</div>
+</body>
+</html>
